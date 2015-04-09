@@ -42,6 +42,7 @@ set list       " Show Whitespace
 
 syntax enable
 " set background=dark
-colorscheme monokai
+colorscheme molokai
 " colorscheme enlightenment
 let g:rehash256 = 1
+set t_Co=256
