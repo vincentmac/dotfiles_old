@@ -1,11 +1,6 @@
-# N - Node Version Manager
-export N_PREFIX=/Users/vincent/local
-
-# NVM - Node Version Manager
-#source ~/.nvm/nvm.sh
 
 #GO Path
-export GOPATH=~/local/lib/go/
+export GOPATH=/usr/local/lib/go/
 
 # Google Cloud SDK
 GCLOUD=~/google-cloud-sdk
@@ -21,13 +16,13 @@ export ALGO4=~/workspace/algorithms
 export DOCKER_HOST=tcp://
 
 # path to Android SDK
-ANDROID=/Users/vincent/developer/android-sdk
+ANDROID=${HOME}/developer/android-sdk
 
 # path to Dart SDK
-DART=/Users/vincent/developer/dart-sdk
+DART=${HOME}/developer/dart-sdk
 
 # path to AWS CLI Tools
-AWS=/Users/vincent/developer/aws
+AWS=${HOME}/developer/aws
 
 export GEM_HOME=/Users/vincent/.gem
 
@@ -38,14 +33,13 @@ PATHDIRS=(
   /usr/local/lib
   /usr/local/cassandra/bin
   /usr/local/mongodb/bin
-  /Users/vincent/local/bin
+  ${HOME}/local/bin
   ${ANDROID}/tools
   ${ANDROID}/platform-tools
   ${DART}/bin
-  $HOME/.rbenv/bin
+  ${HOME}/.rbenv/bin
   ${GEM_HOME}/bin
   /usr/local/heroku/bin
-  $HOME/.local/bin
   ${GOPATH}/bin
   ${AWS}/eb/macosx/python2.7
   #/Applications/Postgres.app/Contents/Versions/9.3/bin
@@ -63,7 +57,7 @@ done
 
 export PATH=${paths}${PATH}
 
-alias bower='noglob bower'
+#alias bower='noglob bower'
 
 alias goapp=${GCLOUD}/platform/google_appengine/goapp
 
@@ -73,12 +67,12 @@ alias goapp=${GCLOUD}/platform/google_appengine/goapp
 #[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # rbenv shim
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 
 
 # z setup
 #. /Users/vincent/local/bin/z.sh
-. ${HOME}/.dotfiles/z/z.sh
+  . ${HOME}/.dotfiles/z/z.sh
 
 
 #function precmd () {

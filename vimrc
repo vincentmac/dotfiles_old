@@ -40,6 +40,8 @@ set number     " Show Line Numbers
 set cursorline " Highlight current line
 set list       " Show Whitespace
 
-syntax on
-colors monokai2
-"colors enlightenment
+syntax enable
+" set background=dark
+colorscheme monokai
+" colorscheme enlightenment
+let g:rehash256 = 1
