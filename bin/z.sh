@@ -1,0 +1,1 @@
+/home/vincent/projects/dotfiles/z/z.sh

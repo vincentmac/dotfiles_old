@@ -50,6 +50,7 @@ PATHDIRS=(
   ${AWS}/eb/macosx/python2.7
   #/Applications/Postgres.app/Contents/Versions/9.3/bin
   ${ALGO4}/bin
+  ${HOME}/.dotfiles/bin
 #  ${GCLOUD}/bin
   #$HOME/github/llvm-build/Debug+Asserts/bin
 )
@@ -77,7 +78,7 @@ eval "$(rbenv init -)"
 
 # z setup
 #. /Users/vincent/local/bin/z.sh
-. /usr/local/bin/z.sh
+. ${HOME}/.dotfiles/z/z.sh
 
 
 #function precmd () {

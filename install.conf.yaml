@@ -1,0 +1,21 @@
+#- clean: []
+
+- shell:
+  - sudo apt-get install zsh
+  - sudo apt-get install -y build-essential cmake libpython-dev #YouCompleteMe
+  - curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
+ 
+-
+  link:
+    ~/.dotfiles: ""
+    ~/.gitconfig: gitconfig
+    ~/.vim: vim/
+    ~/.vimrc: vimrc
+    ~/.zshrc: zshrc
+    ~/.zshenv: zshenv
+    ~/.oh-my-zsh/themes/vincent.zsh-theme: vincent.zsh-theme
+    bin/z.sh: z/z.sh 
+
+- shell:
+  - git submodule update --init --recursive
+  - ./vim/bundle/YouCompleteMe/install.sh --clang-completer
