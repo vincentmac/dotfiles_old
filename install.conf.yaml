@@ -1,6 +1,7 @@
 #- clean: []
 
 - shell:
+  - sudo apt-get install -y software-properties-common # for ppas
   - sudo apt-get install -y zsh curl vim
   - sudo apt-get install -y build-essential cmake libpython-dev #YouCompleteMe
   - curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
@@ -18,5 +19,5 @@
 
 - shell:
   - git submodule update --init --recursive
-  - chsh -s /usr/bin/zsh # set zsh as default shell
+  - if [[ "$ZSH_NAME" -ne "zsh" ]] ; then chsh -s /usr/bin/zsh; fi # set zsh as default shell
     #  - ./vim/bundle/YouCompleteMe/install.sh --clang-completer
