@@ -16,7 +16,9 @@
     ~/.zshenv: zshenv
     ~/.oh-my-zsh/themes/vincent.zsh-theme: vincent.zsh-theme
     bin/z.sh: z/z.sh 
-    ~/.config/terminator/config: config/terminator
+    ~/.config/terminator:
+      create: true
+      path: config/terminator/
 
 - shell:
   - git submodule update --init --recursive
