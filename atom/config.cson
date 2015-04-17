@@ -1,0 +1,18 @@
+"*":
+  "exception-reporting":
+    userId: "b189e6b5-d09d-d0ee-13a8-9babaae263ef"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "seti-ui"
+      "enlightened"
+    ]
+  editor:
+    invisibles: {}
+    scrollPastEnd: true
+    showIndentGuide: true
+    showInvisibles: true
+    fontFamily: "DejaVu Sans Mono"
+    fontSize: 12
+    softWrap: true

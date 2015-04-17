@@ -22,6 +22,7 @@
     ~/.atom/init.coffee:
       create: true
       path:  atom/init.coffee
+    ~/.atom/config.cson: atom/config.cson
 
 - shell:
   - git submodule update --init --recursive
