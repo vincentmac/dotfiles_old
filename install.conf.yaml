@@ -19,6 +19,7 @@
     ~/.config/terminator:
       create: true
       path: config/terminator/
+    ~/.atom/init.coffee: atom/init.coffee
 
 - shell:
   - git submodule update --init --recursive
